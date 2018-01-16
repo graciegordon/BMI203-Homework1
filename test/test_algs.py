@@ -1,5 +1,5 @@
 import numpy as np
-from BMI203-Homework1 import sorts
+from functions import sorts
 
 def test_empty_vector():
     #generate empty vector
@@ -10,7 +10,7 @@ def test_empty_vector():
     assert np.array_equal(sorts.bubble(x),sortedX)
 
     #check quicksort
-    assert np.array_equal(sorts.quickSort(x),sortedX)
+    assert np.array_equal(sorts.quickSort(x, 0,len(listToSort)-1),sortedX)
 
 def test_signal_element_vector():
     #generate single element vector
@@ -21,7 +21,7 @@ def test_signal_element_vector():
     assert np.array_equal(sorts.bubble(x),sortedX)
 
     #check quicksort
-    assert np.array_equal(sorts.quickSort(x),sortedX)
+    assert np.array_equal(sorts.quickSort(x, 0,len(listToSort)-1),,sortedX)
 
 def duplicated_element_vector():
     temp= np.array([[1,2],[3,4]])
@@ -33,7 +33,7 @@ def duplicated_element_vector():
     assert np.array_equal(sorts.bubble(x),sortedX)
 
     #check quicksort
-    assert np.array_equal(sorts.quickSort(x),sortedX)
+    assert np.array_equal(sorts.quickSort(x, 0,len(listToSort)-1),sortedX)
 
 def test_varied_length_vector():
     x=np.random.rand(10)
@@ -47,8 +47,8 @@ def test_varied_length_vector():
     assert np.array_equal(sorts.bubble(y),sortedY)
 
     #check quicksort
-    assert np.array_equal(sorts.quickSort(x),sortedX)
-    assert np.array_equal(sorts.quickSort(y),sortedY)
+    assert np.array_equal(sorts.quickSort(x, 0,len(listToSort)-1),sortedX)
+    assert np.array_equal(sorts.quickSort(y, 0,len(listToSort)-1),sortedY)
 
 
 
