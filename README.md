@@ -1,11 +1,10 @@
-## BMI203-Homework1
-
-This repository contains quicksort and bubble functions. Given a list the function will retrun the sorted list, the number of assignments and the number of conditionals
-
-##Travis link
 [![Build
 Status](https://travis-ci.org/graciegordon/example.svg?branch=master)](https://travis-ci.org/graciegordon/example)
 
+
+## BMI203-Homework1
+
+This repository contains quicksort and bubble functions. Given a list the function will retrun the sorted list, the number of assignments and the number of conditionals
 
 ## usage
 
