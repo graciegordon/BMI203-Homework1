@@ -9,11 +9,10 @@ def bubble(listToSort):
 
     for i in range(0,listLen):
         j=1
-        assignment+=1
+        assignment+=2
         while j<(listLen-i):
             conditional+=1
             if listToSort[j-1]>listToSort[j]:
-                conditional+=1
                 temp=listToSort[j]
                 listToSort[j]=listToSort[j-1]
                 listToSort[j-1]=temp;
@@ -46,10 +45,7 @@ def partition(ListToSort, p, r):
             assignment+=1
         conditional+=1
         if left<right:
-            conditional+=1
-            #print(ListToSort[left],ListToSort[right])
             ListToSort[left],ListToSort[right]=ListToSort[right],ListToSort[left]
-            #print(ListToSort[left],ListToSort[right])
             assignment+=1
         conditional+=1
     conditional+=1
@@ -62,9 +58,8 @@ def partition(ListToSort, p, r):
     
 
 def quickSort(ListToSort,p,right,conditional,assignment):
-
+    conditional+=1
     if right>p:
-        conditional+=1
         pivot,conditionals2,assignments2=partition(ListToSort,p,right)
         conditional+=conditionals2
         assignment+=assignments2
